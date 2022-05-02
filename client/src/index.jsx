@@ -10,9 +10,6 @@ import { RatingProvider } from './contexts/ReviewMeta';
 
 import themes from './contexts/Theme';
 import Overview from './components/Overview';
-import QA from './components/QA/QA';
-import Ratings from './components/Ratings/Ratings';
-import RelatedProducts from './components/RelatedProducts/RelatedProducts';
 
 function App() {
   const storedTheme = localStorage.getItem('theme');
@@ -47,10 +44,7 @@ function App() {
             <RatingProvider>
               <StylesProvider>
                 <Overview />
-                <RelatedProducts />
               </StylesProvider>
-              <QA />
-              <Ratings />
             </RatingProvider>
           </SiteBody>
         </Site>
